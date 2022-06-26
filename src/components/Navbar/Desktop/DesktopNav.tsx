@@ -5,6 +5,7 @@ import {
     Box,
     Popover,
     Link,
+    Button,
     PopoverTrigger,
     useColorModeValue,
     PopoverContent,
@@ -18,7 +19,7 @@ const DesktopNav = () => {
     return (
         <Stack direction={"row"} spacing={4}>
             {NAV_ITEMS.map((navItem) => (
-                <Box key={navItem.label}>
+                <Box key={navItem.label} pt={2}>
                     <Popover trigger={"hover"} placement={"bottom-start"}>
                         <PopoverTrigger>
                             <Link
@@ -58,6 +59,23 @@ const DesktopNav = () => {
                     </Popover>
                 </Box>
             ))}
+            <Box key={"LaunchDemoButton"}>
+                <Popover trigger={"hover"} placement={"bottom-start"}>
+                    <PopoverTrigger>
+                        <Link href={"https://hack.gammaswap.com"} target={"_blank"}
+                              style={{textDecoration: "none"}}>
+                            <Button
+                                bgColor={"brand.primary"}
+                                borderRadius={10}
+                            >
+                                <Box textStyle={"h4"} color={"gray.100"}>
+                                    Launch Demo
+                                </Box>
+                            </Button>
+                        </Link>
+                    </PopoverTrigger>
+                </Popover>
+            </Box>
         </Stack>
     );
 };

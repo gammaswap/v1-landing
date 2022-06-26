@@ -52,13 +52,28 @@ const Waitlist: React.FC = () => {
                                     Get Notified at Launch
                                 </Box>
                         </Button>
+                    </Link><br/>
+                    <Link href={"https://hack.gammaswap.com"} target={"_blank"}
+                          style={{textDecoration: "none"}}
+                          display={{ md: "none" }}>
+                        <Button
+                            bgColor={"brand.primary"}
+                            borderRadius={10}
+                            mt={'10'}
+                            h={20}
+                            w={52}
+                        >
+                            <Box textStyle={"h3"} color={"gray.100"}>
+                                Launch Demo
+                            </Box>
+                        </Button>
                     </Link>
                     <Box
                     textStyle={"h4"}
                     color={"gray.100"}
                     lineHeight={8}
                     px={["1em", 86]}
-                    py={20}
+                    py={["2em", 20]}
                     >
                         GammaSwap is the first decentralized exchange that allows you to short or long crypto volatility
                         by providing or shorting liquidity from CFMMs like Uniswap, Sushiswap, Balancer, etc.
@@ -68,7 +83,8 @@ const Waitlist: React.FC = () => {
             <Flex
                 direction={"row"}
                 justify={"center"}
-                mr={[0,"1em"]}
+                mt={[0,"1em"]}
+                mb={[5]}
             >
                 <HStack spacing={4} color={"gray.100"}>
                     <Link href={"https://www.twitter.com/gammaswaplabs"} target={"_blank"}>
