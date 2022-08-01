@@ -13,6 +13,7 @@ import {
     FaTwitter,
     FaLinkedin,
     FaGithub,
+    FaDiscord,
 } from 'react-icons/fa';
 
 const Waitlist: React.FC = () => {
@@ -87,6 +88,9 @@ const Waitlist: React.FC = () => {
                 mb={[5]}
             >
                 <HStack spacing={4} color={"gray.100"}>
+                    <Link href={"https://discord.gg/hU9RVKR6cm"} target={"_blank"}>
+                        <Icon w={7} h={7} as={FaDiscord} />
+                    </Link>
                     <Link href={"https://www.twitter.com/gammaswaplabs"} target={"_blank"}>
                         <Icon w={7} h={7} as={FaTwitter} />
                     </Link>
