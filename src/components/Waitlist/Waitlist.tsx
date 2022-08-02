@@ -7,6 +7,7 @@ import {
     Link,
     Flex,
     Icon,
+    Image,
 } from '@chakra-ui/react';
 import Navbar from '../Navbar/Navbar';
 import {
@@ -27,6 +28,7 @@ const Waitlist: React.FC = () => {
                 textAlign="center"
                 pt={20}
                 >
+                <Image borderRadius="lg" w={"12em"} src={"/assets/gsLogo2.png"} alt={"GammaSwap Logo"} />
                 <Box
                     textStyle={"h1"}
                     color={"gray.200"}
